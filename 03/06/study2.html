@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>품(form)</title>
+</head>
+
+<body>
+    <p>시맨틱 태그</p>
+    <header>header</header>
+    <nav>nav</nav>
+    <section>section
+        <h1>h2 제목</h1>
+    </section>
+    <article>article</article>
+    <aside>aside</aside>
+    <footer>tooter</footer>
+    <main>main</main>
+
+    <form action="#" method="">
+        <fieldset>
+            <legend>입력 폼</legend>
+            <label>text : <input type="text" value="읽기 전용" readonly></label>
+            <br /><label>password : <input type="password"></label>
+            <label>tel : <input type="tel" placeholder="전화번호 입력해 주세요!"></label>
+            <br /><label>number : <input type="number"></label>
+            <label>url : <input type="url"></label>
+            <br /><label>search : <input type="search"></label>
+            <label>email : <input type="email"></label>
+            <br /><label>checkbox : <input type="checkbox" checked></label>
+            <label>radio : <input type="radio"></label>
+            <br /><label>file : <input type="file"></label>
+            <label>button : <input type="button"></label>
+            <br /><label>image : <input type="image" src="facebook.png" alt="페이스북 버튼"></label>
+            <label>hidden : <input type="hidden"></label>
+            <br /><label>date : <input type="date"></label>
+            <label>datetime-local : <input type="datetime-local"></label>
+            <br /><label>month : <input type="month"></label>
+            <label>week : <input type="week"></label>
+            <br /><label>time : <input type="time"></label>
+            <label>range : <input type="range"></label>
+            <br /><label>color : <input type="color"></label>
+            <label>submit : <input type="submit"></label>
+            <br /><label>reset : <input type="reset"> </label>
+            <label>textarea : <textarea></textarea></label>
+            <br /><select multiple>
+                <optgroup label="성별">
+                    <option value="male" selected>남</option>
+                    <option value="female">여</option>
+                    <option value="female">남여 모두</option>
+                </optgroup>
+            </select>
+            <label>button : <button disabled>안녕</button></label>
+        </fieldset>
+    </form>
+    <table border="1">
+        <caption>가격표</caption>
+        <col style="width: 80px;" />
+        <colgroup span="2" style="width: 150px;"></colgroup>
+        <col style="width: 180px;" />
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">2,500d원</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1,500원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>1개</td>
+                <td rowspan="2">1,000원</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>탄산수</td>
+                <td>3개</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <table border="1">
+        <caption>성적표</caption>
+        <tr>
+            <th scope="col" rowspan="2">구분</th>
+            <th scope="colgroup" colspan="2">1학년</th>
+        </tr>
+        <tr>
+            <th>중간고사</th>
+            <th>기말고사</th>
+        </tr>
+        <tr>
+            <th scope="row">전공</th>
+            <td>A+</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <th scope="row">교양</th>
+            <td>C-</td>
+            <td>B</td>
+        </tr>
+    </table>
+    <p>멀티미디어 태그</p>
+    <audio controls>
+        <source src="" type="audio/wav">
+        <source src="" type="audio/wav">
+        지원하지 않는 브라우저입니다.
+    </audio>
+    <br />
+    <video src="" controls></video>
+
+    
+
+</body>
+
+</html>

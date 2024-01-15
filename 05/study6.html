@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 선택자 다루기</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /*
+    dt 스타일링
+    */
+    [class] {
+      color:red;
+    }
+  </style>
+</head>
+<body>
+    <h1 class="red blue">h1 tag</h1>
+    <p class="red">p tag</p>
+    <dl>
+        <dt>내부 : CSS</dt>
+        <dd>외부 : CSS는 Cascading Style Sheets의 약자입니다.</dd>
+        <dd style="color: orange;"> 인라인 : CSS는 Cascading Style Sheets의 약자입니다.</dd>
+    </dl>
+</body>
+</html>
