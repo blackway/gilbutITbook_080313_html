@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS 선택자 다루기</title>
-  <link rel="stylesheet" href="./style.css">
-  <style>
-    /*
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 다루기</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /*
     dt 스타일링
     */
-    [class] {
-      color:red;
-    }
-  </style>
+        [class] {
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 class="red blue">h1 tag</h1>
+    <h1 class="red blue">CSS 선택자 다루기</h1>
     <p class="red">p tag</p>
     <dl>
         <dt>내부 : CSS</dt>
         <dd>외부 : CSS는 Cascading Style Sheets의 약자입니다.</dd>
         <dd style="color: orange;"> 인라인 : CSS는 Cascading Style Sheets의 약자입니다.</dd>
     </dl>
+    </div>
+    <p>전체 선택자 : * { color: red; }</p>
+    <p>태그 선택자 : dt { color: red; }</p>
+    <p>아이디 선택자 유일 : #h1 { color: red; }</p>
+    <p>클래스 선택자 중복 가능, 여러게 가능 : .red { color: red; }</p>
+    <p>기본 속성 선택자 : [class] { color: red; }</p>
+    <p>기본 속성 선택자 : [class='red'] { color: red; }</p>
+    <p>기본 속성 선택자 : [href='#'] { color: red; }</p>
+    <p>그룹 선택자 : h1, p { color: red; }</p>
+    <p>자식 선택자 : div > h2 { color: red; }</p>
+    <p>하위 선택자 : div h2 { color: red; }</p>
+    <p>인접 형제 선택자 : h2 + h3 { color: red; }</p>
+    <p>일반 형제 선택자 모두 선택  : h2 ~ h3 { color: red; }</p>
+    <p>가상요소 선택자 : h2::before 또는 h2::after { content: 'test 문자열'; }</p>
+    <p>가상클래스 선택자 요소의 상태 a 태그 방문 : a:link 또는 a::hover 또는 a::active { color: red; }</p>
+    <p>입력요소 가상클래스 선택자 input : input:focus 또는 input::checked + label { color: red; }</p>
+    <p>입력요소 가상클래스 선택자 input : input:focus 또는 input::checked + label { color: red; }</p>
+    <h2>h2 tag</h2>
+    <h3>h3 tag</h3>
+    <h4>h4 tag</h4>
+    <div>
+        <h2>div > h2 tag</h2>
+        <h3>div > h3 tag</h3>
+        <h4>div > h4 tag</h4>
+        <div>
+            <h2> div > div > h2 tag 하위</h2>
+        </div>
+    </div>
+    <h2>h2 tag</h2>
+    <input type="checkbox" />
+    <lable>성별</lable>
 </body>
+
 </html>
